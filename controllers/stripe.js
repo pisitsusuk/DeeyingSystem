@@ -1,6 +1,6 @@
 const prisma = require("../config/prisma");
 const stripe = require("stripe")(
-  "REDACTED"
+  "process.env.SECRET_STRIPE"
 );
 
 exports.payment = async (req, res) => {
